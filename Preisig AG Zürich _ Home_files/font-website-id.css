@@ -1,0 +1,172 @@
+/* Einbinden Webfonts ab Server */
+
+@font_path: '../webfonts/Source_Sans_3/';
+
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-style: normal;
+	src: 	url('../fonts/OpenSans-Light.ttf'),
+			url('../fonts/OpenSans-Light.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-style: normal;
+	src: 	url('../fonts/OpenSans-Regular.ttf'),
+			url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 600;
+	font-style: normal;
+	src: 	url('../fonts/OpenSans-SemiBold.ttf'),
+			url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	font-weight: 700;
+	font-style: normal;
+	src: 	url('../fonts/OpenSans-Bold.ttf'),
+			url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-weight: 300;
+	font-style: italic;
+	src:	url('../fonts/LibreBaskerville-Regular.ttf'),
+			url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Libre Baskerville';
+	font-weight: 700;
+	font-style: italic;
+	src:	url('../fonts/LibreBaskerville-Bold.ttf'),
+			url('../fonts/LibreBaskerville-Bold.ttf') format('truetype');
+	font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Website-ID';
+    src:    url('../fonts/Website-ID.eot?7zja4u');
+    src:    url('../fonts/Website-ID.eot?7zja4u#iefix') format('embedded-opentype'),
+        url('../fonts/Website-ID.ttf?7zja4u') format('truetype'),
+        url('../fonts/Website-ID.woff?7zja4u') format('woff'),
+        url('../fonts/Website-ID.svg?7zja4u#Website-ID') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapsubheader.portraet .subheader .organigramm p a[href$=".pdf"]::before,
+.contentright.mail article p a::before,
+.contentright article p a[href^="https://"]::before,
+.contentright article p a[href^="http://"]::before,
+.contentrightsub article p a[href^="https://"]::before,
+.contentrightsub article p a[href^="http://"]::before,
+.wrapcontent .contentrightsub article p a::before,
+.wrapcontent .contentright article p a::before,
+.wrapcontent dl.accordion dd.mail p a::before,
+.wrapcontent .contentimages.portraet .img-small .text_portraet p a::before,
+.wrapcontent .contentright.mail article p a::before,
+[class^="icon-"], 
+[class*=" icon-"] {		
+	font-family: 'Website-ID' !important;  /* use !important to prevent issues with browser extensions that change fonts */
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wrapcontent .job-page article a[href^="https://"]::before,
+.contentright article p a[href^="https://"]::before,
+.contentright article p a[href^="http://"]::before,
+.contentrightsub article p a[href^="https://"]::before,
+.contentrightsub article p a[href^="http://"]::before,
+.icon-link_extern:before {
+	content: "\e900";
+	font-size: 1em;
+	padding: 0 6px 0 0;
+}
+
+.contentright article p a[href^="mailto:"]::before,
+.contentright article p a[href^="mailto:"]::before,
+.contentrightsub article p a[href^="mailto:"]::before,
+.contentrightsub article p a[href^="mailto:"]::before,
+
+.wrapcontent dl.accordion dd.mail p a[href^="mailto:"]::before,
+.wrapcontent .contentrightsub.mail article p a[href^="mailto:"]::before,
+.wrapcontent .contentimages.portraet .img-small .text_portraet p a[href^="mailto:"]::before,
+.wrapcontent .contentright.mail article p a[href^="mailto:"]::before,
+.wrapcontent .job-page article a[href^="mailto:"]::before,
+.icon-mail:before {
+	content: "\e901";
+	font-size: 0.9em;
+	padding: 0 6px 0 0;
+}
+
+.wrapcontent dl.accordion dd.mail p a[href$=".pdf"]::before,
+.wrapcontent .contentrightsub article p a[href$=".pdf"]::before,
+.wrapcontent .contentright article p a[href$=".pdf"]::before,
+.wrapsubheader.portraet .subheader .organigramm p a[href$=".pdf"]::before,
+.icon-pdf:before {
+	content: "\e903";
+	font-size: 1.9em;
+	padding: 0 6px 0 0;
+	position: relative;
+    		top: 4px;
+}
+
+.icon-pfeil_li:before {
+	content: "\e904";
+	font-size: 1em;
+}
+
+.icon-pfeil_re:before {
+	content: "\e905";
+	font-size: 1em;
+}
+.wrapcontent dl.accordion dd.mail p a[href ^="tel:"]::before,
+.wrapcontent .contentright.mail article p a[href ^="tel:"]::before {
+	content: " ";
+}
+
+.icon-tel .path1:before {
+	content: "\e907";
+	font-size: 1.125em;
+	 color: rgb(0, 0, 0);  /*  Farbe Handy */
+}
+
+.icon-tel .path2:before {
+	content: "\e908";
+	margin-left: -0.650390625em;
+	color: rgb(255, 255, 255);  /* Farbe Punkt */
+	font-size: 1.125em;
+}
+
+@media screen and (max-width:850px) {		
+	.icon-plus:before {
+		content: "\e906"; 
+	}
+	.icon-minus:before {
+		content: "\e902";
+	}
+}

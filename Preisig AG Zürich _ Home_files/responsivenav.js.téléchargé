@@ -1,0 +1,54 @@
+$(function() {
+    $('.toggle-nav').click(function() {
+        toggleNavigation();
+    });
+});
+
+
+// The toggleNav function itself
+function toggleNavigation() {
+    if ($('#container').hasClass('display-nav')) {
+        // Close Nav
+        $('#container').removeClass('display-nav');
+    } else {
+        // Open Nav
+        $('#container').addClass('display-nav');
+    }
+}
+
+
+// Sliding codes and active nav
+// SLiding codes
+$("#toggle > li > div").click(function () {
+    if (false == $(this).next().is(':visible')) {
+        $('#toggle ul').slideUp();
+    }
+
+    var $currIcon=$(this).find("span.the-btn");
+
+    $("span.the-btn").not($currIcon).addClass('icon-plus').removeClass('icon-minus');
+
+    $currIcon.toggleClass('icon-minus icon-plus');
+
+    $(this).next().slideToggle();
+
+    $("#toggle > li > div").removeClass("active");
+    $(this).addClass('active');
+
+});
+
+
+// codes active subnav
+$("#toggle > li > ul > li > a").click(function () {
+
+    $(this).next().slideToggle();
+
+    $("#toggle > li > ul > li > a").removeClass('active-sub');
+    $(this).addClass('active-sub');
+
+});
+
+/* meta nav */
+$('#headernav li').hover(function() {
+	$(this).children('ul').stop(true, false, true).slideToggle(300);
+});

@@ -1,0 +1,245 @@
+.postIt {
+    z-index: 99;
+    position: relative;
+    width: 123px;
+    height:35px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    float: right;
+}
+
+a.linkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.postIt .postIt-container {
+    padding: 0 18px;
+}
+
+.postIt .postIt-title {
+    padding-top: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.extended {
+    display: none;
+}
+
+.postIt .postIt-ecke {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 46px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+/* BLAUER BUTTON */
+
+.postIt.blau {
+    background-image: url(../img/postit_blau_bg_mobile.png);
+    margin-left: 10px;
+}
+
+.postIt.blau .postIt-title {
+    color: #fcd731;
+}
+
+.postIt.blau .postIt-text {
+    color: #fcd731;
+}
+
+.postIt.blau .postIt-ecke {
+    background-image: url(../img/postit_blau_ecke_mobile.png);
+}
+
+/* GELBER BUTTON */
+
+.postIt.gelb {
+    background-image: url(../img/postit_gelb_bg_mobile.png);
+}
+
+.postIt.gelb .postIt-title {
+    color: #0d3595;
+}
+
+.postIt.gelb .postIt-text {
+    color: #0d3595;
+}
+
+.postIt.gelb .postIt-ecke {
+    background-image: url(../img/postit_gelb_ecke_mobile.png);
+}
+
+@media screen and (min-width: 420px){
+    .postIt {
+        width: 128px;
+    }
+    .postIt.blau {
+        background-image: url(../img/postit_blau_bg_mobile_gr.png);
+        margin-left: 15px;
+    }
+
+    /* GELBER BUTTON */
+
+    .postIt.gelb {
+        background-image: url(../img/postit_gelb_bg_mobile_gr.png);
+    }
+
+}
+
+
+
+@media screen and (min-width: 768px){
+    .postIt {
+        width: 167px;
+        height: 126px;
+        margin-top: 25px;
+    }
+
+    .postIt .postIt-container {
+        padding: 0 20px;
+    }
+
+    .postIt .postIt-title {
+        text-align: center;
+        font-size: 21px;
+        padding-top: 10px;
+    }
+
+    .extended {
+        display: block;
+    }
+
+    .postIt .postIt-text {
+        text-align: center;
+        padding-top: 15px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 400;
+    }
+    .postIt .postIt-ecke {
+        width: 52px;
+        height: 37px;
+    }
+
+/* BLAUER BUTTON */
+
+    .postIt.blau {
+        background-image: url(../img/postit_blau_bg_tablet.png);
+    }
+
+    .postIt.blau .postIt-title {
+        color: #fcd731;
+    }
+
+    .postIt.blau .postIt-text {
+        color: #fcd731;
+    }
+
+    .postIt.blau .postIt-ecke {
+        background-image: url(../img/postit_blau_ecke_tablet.png);
+    }
+
+/* GELBER BUTTON */
+
+    .postIt.gelb {
+        background-image: url(../img/postit_gelb_bg_tablet.png);
+    }
+
+    .postIt.gelb .postIt-title {
+        color: #0d3595;
+    }
+
+    .postIt.gelb .postIt-text {
+        color: #0d3595;
+    }
+
+    .postIt.gelb .postIt-ecke {
+        background-image: url(../img/postit_gelb_ecke_tablet.png);
+    }
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+    .postIt {
+        width: 182px;
+        height: 136px;
+    }
+
+    .postIt .postIt-container {
+        padding: 0 20px;
+    }
+
+    .postIt .postIt-title {
+        padding-top: 11px;
+        font-size: 24px;
+    }
+
+    .extended {
+        display: block;
+    }
+
+    .postIt .postIt-text {
+        text-align: center;
+        padding-top: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .postIt .postIt-ecke {
+        width: 52px;
+        height: 37px;
+    }
+
+/* BLAUER BUTTON */
+
+    .postIt.blau {
+        background-image: url(../img/postit_blau_bg.png);
+    }
+
+    .postIt.blau .postIt-title {
+        color: #fcd731;
+    }
+
+    .postIt.blau .postIt-text {
+        color: #fcd731;
+    }
+
+    .postIt.blau .postIt-ecke {
+        background-image: url(../img/postit_blau_ecke.png);
+    }
+
+/* GELBER BUTTON */
+
+    .postIt.gelb {
+        background-image: url(../img/postit_gelb_bg.png);
+    }
+
+    .postIt.gelb .postIt-title {
+        color: #0d3595;
+    }
+
+    .postIt.gelb .postIt-text {
+        color: #0d3595;
+    }
+
+    .postIt.gelb .postIt-ecke {
+        background-image: url(../img/postit_gelb_ecke.png);
+    }
+}
